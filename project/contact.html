@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | DigitalCraft Agency</title>
+    <meta name="description" content="Get in touch with DigitalCraft Agency for your web development, app development, digital marketing, and UI/UX design needs. Free consultation available.">
+    <link rel="canonical" href="https://digitalcraft.agency/contact">
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="stylesheet" href="src/styles/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" class="logo-link">
+                    <span class="logo-text">VenusSolution</span>
+                </a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="index.html#services" class="nav-link">Services</a>
+                    <ul class="dropdown-content">
+                        <li><a href="web-development.html">Web Development</a></li>
+                        <li><a href="app-development.html">App Development</a></li>
+                        <li><a href="digital-marketing.html">Digital Marketing</a></li>
+                        <li><a href="ui-ux-design.html">UI/UX Design</a></li>
+                        <li><a href="graphic-design.html">Graphic Design</a></li>
+                        <li><a href="branding-solutions.html">Branding Solutions</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#packages" class="nav-link">Packages</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#portfolio" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#blog" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-cta">
+                <a href="#consultation" class="cta-button">Get Consultant</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Let's Start Your Digital Journey</h1>
+                <p class="hero-subtitle">Ready to transform your business? Get in touch with our expert team for a free consultation and discover how we can help you achieve your digital goals.</p>
+                <div class="hero-features">
+                    <div class="feature">
+                        <div class="feature-icon">✓</div>
+                        <span>Free Consultation</span>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">✓</div>
+                        <span>24/7 Support</span>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">✓</div>
+                        <span>Custom Solutions</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section" id="contact-form">
+        <div class="container">
+            <div class="contact-content">
+                <div class="form-container">
+                    <div class="form-header">
+                        <h2>Get Your Free Quote</h2>
+                        <p>Tell us about your project and we'll provide you with a detailed proposal within 24 hours.</p>
+                    </div>
+                    
+                    <form class="multi-step-form" id="contactForm">
+                        <!-- Step 1: Project Type -->
+                        <div class="form-step active" id="step1">
+                            <h3>What service do you need?</h3>
+                            <div class="service-options">
+                                <label class="service-option">
+                                    <input type="radio" name="service" value="web-development" required>
+                                    <div class="option-card">
+                                        <div class="option-icon">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                                <line x1="8" y1="21" x2="16" y2="21"/>
+                                                <line x1="12" y1="17" x2="12" y2="21"/>
+                                            </svg>
+                                        </div>
+                                        <h4>Web Development</h4>
+                                        <p>Custom websites & web applications</p>
+                                    </div>
+                                </label>
+                                <label class="service-option">
+                                    <input type="radio" name="service" value="app-development" required>
+                                    <div class="option-card">
+                                        <div class="option-icon">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"/>
+                                                <line x1="7" y1="2" x2="7" y2="22"/>
+                                                <line x1="17" y1="2" x2="17" y2="22"/>
+                                            </svg>
+                                        </div>
+                                        <h4>App Development</h4>
+                                        <p>Mobile apps for iOS & Android</p>
+                                    </div>
+                                </label>
+                                <label class="service-option">
+                                    <input type="radio" name="service" value="digital-marketing" required>
+                                    <div class="option-card">
+                                        <div class="option-icon">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
+                                                <polyline points="9,12 12,15 16,10"/>
+                                            </svg>
+                                        </div>
+                                        <h4>Digital Marketing</h4>
+                                        <p>SEO, SEM & social media marketing</p>
+                                    </div>
+                                </label>
+                                <label class="service-option">
+                                    <input type="radio" name="service" value="ui-ux-design" required>
+                                    <div class="option-card">
+                                        <div class="option-icon">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
+                                                <path d="M12 8v8l5-4-5-4z"/>
+                                            </svg>
+                                        </div>
+                                        <h4>UI/UX Design</h4>
+                                        <p>User experience & interface design</p>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Step 2: Project Details -->
+                        <div class="form-step" id="step2">
+                            <h3>Tell us about your project</h3>
+                            <div class="form-fields">
+                                <div class="field-group">
+                                    <label for="projectTitle">Project Title</label>
+                                    <input type="text" id="projectTitle" name="projectTitle" required>
+                                </div>
+                                <div class="field-group">
+                                    <label for="projectDescription">Project Description</label>
+                                    <textarea id="projectDescription" name="projectDescription" rows="4" required placeholder="Describe your project goals, target audience, and key features you need..."></textarea>
+                                </div>
+                                <div class="field-row">
+                                    <div class="field-group">
+                                        <label for="budget">Budget Range</label>
+                                        <select id="budget" name="budget" required>
+                                            <option value="">Select budget range</option>
+                                            <option value="under-5k">Under $5,000</option>
+                                            <option value="5k-10k">$5,000 - $10,000</option>
+                                            <option value="10k-25k">$10,000 - $25,000</option>
+                                            <option value="25k-50k">$25,000 - $50,000</option>
+                                            <option value="over-50k">Over $50,000</option>
+                                        </select>
+                                    </div>
+                                    <div class="field-group">
+                                        <label for="timeline">Timeline</label>
+                                        <select id="timeline" name="timeline" required>
+                                            <option value="">Select timeline</option>
+                                            <option value="asap">ASAP</option>
+                                            <option value="1-month">Within 1 month</option>
+                                            <option value="2-3-months">2-3 months</option>
+                                            <option value="3-6-months">3-6 months</option>
+                                            <option value="flexible">Flexible</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 3: Contact Information -->
+                        <div class="form-step" id="step3">
+                            <h3>How can we reach you?</h3>
+                            <div class="form-fields">
+                                <div class="field-row">
+                                    <div class="field-group">
+                                        <label for="firstName">First Name</label>
+                                        <input type="text" id="firstName" name="firstName" required>
+                                    </div>
+                                    <div class="field-group">
+                                        <label for="lastName">Last Name</label>
+                                        <input type="text" id="lastName" name="lastName" required>
+                                    </div>
+                                </div>
+                                <div class="field-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="field-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone">
+                                </div>
+                                <div class="field-group">
+                                    <label for="company">Company Name</label>
+                                    <input type="text" id="company" name="company">
+                                </div>
+                                <div class="field-group">
+                                    <label for="website">Current Website (if any)</label>
+                                    <input type="url" id="website" name="website" placeholder="https://example.com">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Form Navigation -->
+                        <div class="form-navigation">
+                            <button type="button" class="btn btn-secondary" id="prevBtn" style="display: none;">Previous</button>
+                            <button type="button" class="btn btn-primary" id="nextBtn">Next</button>
+                            <button type="submit" class="btn btn-primary" id="submitBtn" style="display: none;">Send Message</button>
+                        </div>
+
+                        <!-- Progress Indicator -->
+                        <div class="progress-indicator">
+                            <div class="progress-bar">
+                                <div class="progress-fill" id="progressFill"></div>
+                            </div>
+                            <div class="progress-steps">
+                                <span class="step active">1</span>
+                                <span class="step active">2</span>
+                                <span class="step active">3</span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <div class="info-content">
+                            <h4>Office Address</h4>
+                            <p>Sec 62,Noida<br>Utter Pradesh, India</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                        </div>
+                        <div class="info-content">
+                            <h4>Phone</h4>
+                            <p><a href="tel:9034534738">91 9034534738</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </div>
+                        <div class="info-content">
+                            <h4>Email</h4>
+                            <p><a href="mailto:hello@digitalcraft.agency">care@venussolution.com</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12,6 12,12 16,14"/>
+                            </svg>
+                        </div>
+                        <div class="info-content">
+                            <h4>Business Hours</h4>
+                            <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Get Started?</h2>
+                <p class="cta-subtitle">Join hundreds of satisfied clients who have transformed their businesses with our digital solutions</p>
+                <div class="cta-buttons">
+                    <a href="#contact-form" class="btn btn-primary">Start Your Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3>VenusSolution</h3>
+                        <p>Transforming businesses through innovative digital solutions. Proudly serving clients worldwide from India.</p>
+                    </div>
+                    <div class="footer-social">
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <!-- <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a> -->
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="web-development.html">Web Development</a></li>
+                        <li><a href="app-development.html">App Development</a></li>
+                        <li><a href="digital-marketing.html">Digital Marketing</a></li>
+                        <li><a href="ui-ux-design.html">UI/UX Design</a></li>
+                        <li><a href="graphic-design.html">Graphic Design</a></li>
+                        <li><a href="branding-solutions.html">Branding Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="index.html#portfolio">Portfolio</a></li>
+                        <li><a href="index.html#blog">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="index.html#packages">Packages</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 VenusSolution. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/scripts/main.js"></script>
+    <script src="src/scripts/contact.js"></script>
+</body>
+</html>
