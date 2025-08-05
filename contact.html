@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | VenusSolution</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">VenusSolution</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/services/seo.html">Services</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="burger" aria-label="Toggle Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <section class="contact-form" data-aos="fade-up">
+      <div class="container">
+        <h1>Contact Us</h1>
+        <form action="#" method="POST">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" />
+          </div>
+          <div class="field">
+            <label for="service">Service Interested In</label>
+            <select id="service" name="service">
+              <option value="SEO">SEO</option>
+              <option value="Social Media Marketing">Social Media Marketing</option>
+              <option value="Google Ads">Google Ads</option>
+              <option value="Content Writing">Content Writing</option>
+              <option value="Web Design">Web Design</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+          </div>
+          <button class="btn" type="submit">Send Message</button>
+        </form>
+        <p class="contact-info">Phone: <a href="tel:9034534738">9034534738</a></p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; <span id="year"></span> VenusSolution. All rights reserved.</p>
+        <p>Phone: <a href="tel:9034534738">9034534738</a></p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="/scripts.js"></script>
+  </body>
+</html>
