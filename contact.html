@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - VenusSolution</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>VenusSolution</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Services <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="seo.html">SEO</a>
+                        <a href="social-media.html">Social Media Marketing</a>
+                        <a href="google-ads.html">Google Ads</a>
+                        <a href="content-writing.html">Content Writing</a>
+                        <a href="web-design.html">Web Design</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="page-hero-content" data-aos="fade-up">
+            <h1>Get In Touch</h1>
+            <p>Ready to transform your digital presence? Let's discuss how VenusSolution can help you achieve your business goals.</p>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Start Your Digital Journey</h2>
+                <p>Fill out the form below and we'll get back to you within 24 hours with a customized strategy for your business.</p>
+            </div>
+            
+            <div class="form-container" data-aos="fade-up" data-aos-delay="200">
+                <form id="contact-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="service">Service Interested In *</label>
+                        <select id="service" name="service" required>
+                            <option value="">Select a service</option>
+                            <option value="seo">SEO</option>
+                            <option value="social-media">Social Media Marketing</option>
+                            <option value="google-ads">Google Ads</option>
+                            <option value="content-writing">Content Writing</option>
+                            <option value="web-design">Web Design</option>
+                            <option value="multiple">Multiple Services</option>
+                            <option value="consultation">Free Consultation</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="budget">Budget Range</label>
+                        <select id="budget" name="budget">
+                            <option value="">Select budget range</option>
+                            <option value="under-1000">Under $1,000</option>
+                            <option value="1000-5000">$1,000 - $5,000</option>
+                            <option value="5000-10000">$5,000 - $10,000</option>
+                            <option value="10000-25000">$10,000 - $25,000</option>
+                            <option value="over-25000">Over $25,000</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us about your project, goals, and how we can help you succeed..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="contact-info">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Contact Information</h2>
+                <p>Reach out to us through any of these channels</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-item" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-phone"></i>
+                    <h3>Phone</h3>
+                    <p><a href="tel:9034534738">9034534738</a></p>
+                    <p>Mon - Fri, 9 AM - 6 PM</p>
+                </div>
+                
+                <div class="contact-item" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p><a href="mailto:info@venussolution.com">info@venussolution.com</a></p>
+                    <p>We'll respond within 24 hours</p>
+                </div>
+                
+                <div class="contact-item" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-clock"></i>
+                    <h3>Response Time</h3>
+                    <p>Within 24 hours</p>
+                    <p>Fast, professional service</p>
+                </div>
+                
+                <div class="contact-item" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fas fa-comments"></i>
+                    <h3>Free Consultation</h3>
+                    <p>30-minute strategy call</p>
+                    <p>No obligation, valuable insights</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="service-overview">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Frequently Asked Questions</h2>
+                <p>Common questions about our services and process</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
+                    <h3>How quickly can you start my project?</h3>
+                    <p>We typically begin new projects within 1-2 weeks of contract signing. Rush projects can often be accommodated with additional planning.</p>
+                </div>
+                
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
+                    <h3>What's included in your service packages?</h3>
+                    <p>Each service includes strategy development, implementation, regular reporting, and ongoing optimization. Specific deliverables vary by service type.</p>
+                </div>
+                
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
+                    <h3>Do you work with small businesses?</h3>
+                    <p>Absolutely! We work with businesses of all sizes, from startups to enterprises. Our solutions are scalable and tailored to your budget and goals.</p>
+                </div>
+                
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
+                    <h3>How do you measure success?</h3>
+                    <p>We use KPIs specific to your goals: traffic growth, lead generation, conversion rates, ROI, and other metrics that matter to your business.</p>
+                </div>
+                
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
+                    <h3>Can I see examples of your work?</h3>
+                    <p>Yes! We're happy to share relevant case studies and portfolio examples during our consultation call to demonstrate our capabilities.</p>
+                </div>
+                
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="600">
+                    <h3>What makes VenusSolution different?</h3>
+                    <p>Our data-driven approach, transparent reporting, dedicated account management, and proven track record of delivering measurable results for our clients.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2>Ready to Get Started?</h2>
+                <p>Don't wait to transform your digital presence. Contact us today for a free consultation and custom strategy.</p>
+                <a href="tel:9034534738" class="btn btn-primary">Call Now: 9034534738</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>VenusSolution</h3>
+                    <p>Your trusted partner for digital marketing excellence.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="seo.html">SEO</a></li>
+                        <li><a href="social-media.html">Social Media Marketing</a></li>
+                        <li><a href="google-ads.html">Google Ads</a></li>
+                        <li><a href="content-writing.html">Content Writing</a></li>
+                        <li><a href="web-design.html">Web Design</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-phone"></i> 9034534738</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 VenusSolution. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
