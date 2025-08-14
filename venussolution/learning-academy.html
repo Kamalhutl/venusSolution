@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Academy - VenusSolution</title>
+    <meta name="description" content="Comprehensive learning programs including Online Courses, Certification Programs, Internships, and Live Training Sessions in digital technology.">
+    <meta name="keywords" content="learning academy, online courses, certification programs, internships, live training, digital marketing, web development">
+    <meta name="author" content="VenusSolution">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Learning Academy - VenusSolution">
+    <meta property="og:description" content="Enhance your skills and advance your career with our comprehensive learning programs.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://venussolution.com/learning-academy">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Language Toggle -->
+    <div class="language-toggle">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="hi">हिं</button>
+    </div>
+
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <button class="theme-btn" id="theme-toggle">
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" class="logo-link">
+                    <div class="logo-icon">VS</div>
+                    <span class="logo-text">VenusSolution</span>
+                </a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link active">Services <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="digital-marketing.html">Digital Marketing</a></li>
+                        <li><a href="development.html">Development</a></li>
+                        <li><a href="learning-academy.html">Learning Academy</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="portfolio.html" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="blog.html" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="internships.html" class="nav-link">Internships</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item auth-buttons">
+                    <a href="login.html" class="nav-link login-btn">Login</a>
+                    <a href="signup.html" class="nav-link signup-btn">Sign Up</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="service-hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up">
+                <div class="service-icon-large">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h1>Learning Academy</h1>
+                <p>Enhance your skills and advance your career with our comprehensive learning programs. From beginners to professionals, we have the perfect course for you.</p>
+                <div class="hero-cta">
+                    <a href="#courses" class="cta-button primary">
+                        <i class="fas fa-rocket"></i>
+                        Explore Courses
+                    </a>
+                    <a href="contact.html" class="cta-button secondary">
+                        <i class="fas fa-phone"></i>
+                        Get Free Consultation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academy Overview -->
+    <section class="service-overview">
+        <div class="container">
+            <div class="overview-content">
+                <div class="overview-text" data-aos="fade-right">
+                    <h2>Why Choose Our Learning Academy?</h2>
+                    <p>In today's rapidly evolving digital landscape, continuous learning is essential for career growth and success. Our Learning Academy provides industry-relevant courses, hands-on projects, and expert mentorship to help you stay ahead of the curve.</p>
+                    <p>We combine theoretical knowledge with practical experience to ensure you're job-ready and industry-competitive.</p>
+                </div>
+                <div class="overview-stats" data-aos="fade-left">
+                    <div class="stat-card">
+                        <div class="stat-number">1000+</div>
+                        <div class="stat-label">Students Enrolled</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Expert Instructors</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">95%</div>
+                        <div class="stat-label">Success Rate</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Programs -->
+    <section class="learning-programs">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Our Learning Programs</h2>
+                <p>Comprehensive programs designed for every skill level and career goal</p>
+            </div>
+            <div class="programs-grid">
+                <div class="program-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="program-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3>Online Courses</h3>
+                    <p>Self-paced online courses with video lectures, assignments, and assessments. Learn at your own pace from anywhere in the world.</p>
+                    <ul class="program-features">
+                        <li><i class="fas fa-check"></i> Self-Paced Learning</li>
+                        <li><i class="fas fa-check"></i> HD Video Lectures</li>
+                        <li><i class="fas fa-check"></i> Interactive Assignments</li>
+                        <li><i class="fas fa-check"></i> Lifetime Access</li>
+                        <li><i class="fas fa-check"></i> Mobile-Friendly</li>
+                    </ul>
+                    <div class="program-cta">
+                        <a href="#online-courses" class="program-btn">View Courses</a>
+                    </div>
+                </div>
+
+                <div class="program-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="program-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Certification Programs</h3>
+                    <p>Industry-recognized certification programs that validate your skills and enhance your professional credibility.</p>
+                    <ul class="program-features">
+                        <li><i class="fas fa-check"></i> Industry-Recognized</li>
+                        <li><i class="fas fa-check"></i> Skill Assessment</li>
+                        <li><i class="fas fa-check"></i> Digital Certificates</li>
+                        <li><i class="fas fa-check"></i> LinkedIn Integration</li>
+                        <li><i class="fas fa-check"></i> Career Support</li>
+                    </ul>
+                    <div class="program-cta">
+                        <a href="#certifications" class="program-btn">View Programs</a>
+                    </div>
+                </div>
+
+                <div class="program-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="program-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Live Training Sessions</h3>
+                    <p>Interactive live training sessions with industry experts. Get real-time feedback and personalized guidance.</p>
+                    <ul class="program-features">
+                        <li><i class="fas fa-check"></i> Live Expert Sessions</li>
+                        <li><i class="fas fa-check"></i> Real-Time Q&A</li>
+                        <li><i class="fas fa-check"></i> Group Discussions</li>
+                        <li><i class="fas fa-check"></i> Hands-on Practice</li>
+                        <li><i class="fas fa-check"></i> Session Recordings</li>
+                    </ul>
+                    <div class="program-cta">
+                        <a href="#live-training" class="program-btn">View Schedule</a>
+                    </div>
+                </div>
+
+                <div class="program-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="program-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Internships</h3>
+                    <p>Gain real-world experience through our internship programs. Work on live projects and build your portfolio.</p>
+                    <ul class="program-features">
+                        <li><i class="fas fa-check"></i> Live Project Experience</li>
+                        <li><i class="fas fa-check"></i> Industry Mentorship</li>
+                        <li><i class="fas fa-check"></i> Portfolio Building</li>
+                        <li><i class="fas fa-check"></i> Job Placement Support</li>
+                        <li><i class="fas fa-check"></i> Completion Certificate</li>
+                    </ul>
+                    <div class="program-cta">
+                        <a href="internships.html" class="program-btn">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Categories -->
+    <section class="course-categories" id="courses">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Course Categories</h2>
+                <p>Explore our wide range of courses across different domains</p>
+            </div>
+            <div class="categories-grid">
+                <div class="category-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="category-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Digital Marketing</h3>
+                    <p>Master the art of digital marketing with courses in SEO, Social Media, PPC, Content Marketing, and more.</p>
+                    <div class="course-count">15+ Courses</div>
+                    <a href="#digital-marketing-courses" class="category-link">Explore Courses</a>
+                </div>
+
+                <div class="category-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="category-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Learn modern web development technologies including HTML, CSS, JavaScript, React, Node.js, and more.</p>
+                    <div class="course-count">20+ Courses</div>
+                    <a href="#web-development-courses" class="category-link">Explore Courses</a>
+                </div>
+
+                <div class="category-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="category-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Development</h3>
+                    <p>Build mobile applications for iOS and Android using React Native, Flutter, and native technologies.</p>
+                    <div class="course-count">12+ Courses</div>
+                    <a href="#mobile-development-courses" class="category-link">Explore Courses</a>
+                </div>
+
+                <div class="category-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="category-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Create beautiful and functional user interfaces with courses in design principles, tools, and methodologies.</p>
+                    <div class="course-count">10+ Courses</div>
+                    <a href="#uiux-courses" class="category-link">Explore Courses</a>
+                </div>
+
+                <div class="category-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="category-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Data Science</h3>
+                    <p>Learn data analysis, machine learning, and artificial intelligence with Python and R programming.</p>
+                    <div class="course-count">8+ Courses</div>
+                    <a href="#data-science-courses" class="category-link">Explore Courses</a>
+                </div>
+
+                <div class="category-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="category-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud Computing</h3>
+                    <p>Master cloud platforms like AWS, Azure, and Google Cloud with hands-on projects and real-world scenarios.</p>
+                    <div class="course-count">6+ Courses</div>
+                    <a href="#cloud-courses" class="category-link">Explore Courses</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Courses -->
+    <section class="featured-courses">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Featured Courses</h2>
+                <p>Our most popular and highly-rated courses</p>
+            </div>
+            <div class="courses-grid">
+                <div class="course-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="course-image">
+                        <img src="assets/course-digital-marketing.jpg" alt="Digital Marketing Masterclass" loading="lazy">
+                        <div class="course-badge">Bestseller</div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Digital Marketing Masterclass</h3>
+                        <p>Complete digital marketing course covering SEO, Social Media, PPC, Email Marketing, and Analytics.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 40 hours</span>
+                            <span><i class="fas fa-user"></i> 2,500+ students</span>
+                            <span><i class="fas fa-star"></i> 4.8/5</span>
+                        </div>
+                        <div class="course-price">
+                            <span class="original-price">₹15,000</span>
+                            <span class="current-price">₹8,999</span>
+                        </div>
+                        <a href="#" class="enroll-btn">Enroll Now</a>
+                    </div>
+                </div>
+
+                <div class="course-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="course-image">
+                        <img src="assets/course-web-development.jpg" alt="Full Stack Web Development" loading="lazy">
+                        <div class="course-badge">Popular</div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Full Stack Web Development</h3>
+                        <p>Learn to build complete web applications from frontend to backend using modern technologies.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 60 hours</span>
+                            <span><i class="fas fa-user"></i> 1,800+ students</span>
+                            <span><i class="fas fa-star"></i> 4.9/5</span>
+                        </div>
+                        <div class="course-price">
+                            <span class="original-price">₹25,000</span>
+                            <span class="current-price">₹18,999</span>
+                        </div>
+                        <a href="#" class="enroll-btn">Enroll Now</a>
+                    </div>
+                </div>
+
+                <div class="course-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="course-image">
+                        <img src="assets/course-uiux.jpg" alt="UI/UX Design Fundamentals" loading="lazy">
+                        <div class="course-badge">New</div>
+                    </div>
+                    <div class="course-content">
+                        <h3>UI/UX Design Fundamentals</h3>
+                        <p>Master the principles of user interface and user experience design with practical projects.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 35 hours</span>
+                            <span><i class="fas fa-user"></i> 950+ students</span>
+                            <span><i class="fas fa-star"></i> 4.7/5</span>
+                        </div>
+                        <div class="course-price">
+                            <span class="original-price">₹18,000</span>
+                            <span class="current-price">₹12,999</span>
+                        </div>
+                        <a href="#" class="enroll-btn">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Features -->
+    <section class="learning-features">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Why Learn With Us?</h2>
+                <p>Discover the advantages of choosing VenusSolution Learning Academy</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h4>Expert Instructors</h4>
+                    <p>Learn from industry professionals with years of experience in their respective fields.</p>
+                </div>
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h4>Hands-on Projects</h4>
+                    <p>Apply your learning through real-world projects that build your portfolio and skills.</p>
+                </div>
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h4>Community Support</h4>
+                    <p>Join a community of learners and get support from peers and mentors.</p>
+                </div>
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h4>Industry Recognition</h4>
+                    <p>Earn certificates that are recognized by employers and industry leaders.</p>
+                </div>
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h4>Flexible Learning</h4>
+                    <p>Learn at your own pace with 24/7 access to course materials and resources.</p>
+                </div>
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="600">
+                    <div class="feature-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h4>Career Support</h4>
+                    <p>Get guidance on career paths, job opportunities, and industry trends.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2>Ready to Start Your Learning Journey?</h2>
+                <p>Join thousands of students who have transformed their careers with our comprehensive learning programs.</p>
+                <div class="cta-buttons">
+                    <a href="#courses" class="cta-button primary">
+                        <i class="fas fa-rocket"></i>
+                        Browse All Courses
+                    </a>
+                    <a href="contact.html" class="cta-button secondary">
+                        <i class="fas fa-phone"></i>
+                        Talk to Advisor
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">VS</div>
+                        <span class="logo-text">VenusSolution</span>
+                    </div>
+                    <p>Your trusted partner in digital transformation. We help businesses grow, innovate, and succeed in the digital age.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="digital-marketing.html">Digital Marketing</a></li>
+                        <li><a href="development.html">Development</a></li>
+                        <li><a href="learning-academy.html">Learning Academy</a></li>
+                        <li><a href="internships.html">Internships</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> <a href="tel:9034534738">9034534738</a></p>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:info@venussolution.com">info@venussolution.com</a></p>
+                        <p><i class="fas fa-map-marker-alt"></i> Mumbai, Maharashtra, India</p>
+                    </div>
+                    <div class="footer-cta">
+                        <a href="contact.html" class="footer-btn">Get Quote</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 VenusSolution. All rights reserved.</p>
+                    <div class="footer-links">
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms of Service</a>
+                        <a href="sitemap.html">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Live Chat Widget -->
+    <div class="live-chat-widget" id="live-chat">
+        <div class="chat-toggle" id="chat-toggle">
+            <i class="fas fa-comments"></i>
+            <span class="chat-label">Chat with us</span>
+        </div>
+        <div class="chat-window" id="chat-window">
+            <div class="chat-header">
+                <h4>Live Chat</h4>
+                <button class="close-chat" id="close-chat">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <div class="message bot">
+                    <p>Hello! How can we help you with learning today?</p>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Type your message..." id="chat-input">
+                <button class="send-btn" id="send-btn">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/919034534738" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

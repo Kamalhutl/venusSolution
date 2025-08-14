@@ -3,18 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VenusSolution - Digital Marketing Services</title>
-    <meta name="description" content="Professional digital marketing services including SEO, Social Media Marketing, Google Ads, Content Writing, and Web Design.">
+    <title>VenusSolution - Digital Marketing, Development & Learning Academy</title>
+    <meta name="description" content="VenusSolution offers comprehensive Digital Marketing Services, Development Solutions, and Learning Academy programs. Transform your business with our expert services.">
+    <meta name="keywords" content="digital marketing, web development, mobile apps, SEO, social media marketing, learning academy, online courses, internships">
+    <meta name="author" content="VenusSolution">
+    <meta name="contact" content="9034534738">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="VenusSolution - Digital Marketing, Development & Learning Academy">
+    <meta property="og:description" content="Transform your business with our comprehensive digital marketing, development, and learning solutions.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://venussolution.com">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="assets/hero-bg.jpg" as="image">
 </head>
 <body>
+    <!-- Language Toggle -->
+    <div class="language-toggle">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="hi">हिं</button>
+    </div>
+
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <button class="theme-btn" id="theme-toggle">
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="nav-logo">
                 <a href="index.html" class="logo-link">
+                    <div class="logo-icon">VS</div>
                     <span class="logo-text">VenusSolution</span>
                 </a>
             </div>
@@ -22,23 +54,32 @@
                 <li class="nav-item">
                     <a href="index.html" class="nav-link active">Home</a>
                 </li>
-                <li class="nav-item">
-                    <a href="seo.html" class="nav-link">SEO</a>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="digital-marketing.html">Digital Marketing</a></li>
+                        <li><a href="development.html">Development</a></li>
+                        <li><a href="learning-academy.html">Learning Academy</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item">
-                    <a href="social-media.html" class="nav-link">Social Media</a>
+                    <a href="about.html" class="nav-link">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a href="google-ads.html" class="nav-link">Google Ads</a>
+                    <a href="portfolio.html" class="nav-link">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a href="content-writing.html" class="nav-link">Content Writing</a>
+                    <a href="blog.html" class="nav-link">Blog</a>
                 </li>
                 <li class="nav-item">
-                    <a href="web-design.html" class="nav-link">Web Design</a>
+                    <a href="internships.html" class="nav-link">Internships</a>
                 </li>
                 <li class="nav-item">
                     <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item auth-buttons">
+                    <a href="login.html" class="nav-link login-btn">Login</a>
+                    <a href="signup.html" class="nav-link signup-btn">Sign Up</a>
                 </li>
             </ul>
             <div class="hamburger" id="hamburger">
@@ -51,107 +92,164 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+        </div>
         <div class="container">
             <div class="hero-content" data-aos="fade-up">
                 <h1 class="hero-title">
-                    <span class="animated-text">Transform Your Business</span>
-                    <span class="animated-text">With Digital Marketing</span>
+                    <span class="title-line">Transform Your Business</span>
+                    <span class="title-line highlight">With VenusSolution</span>
                 </h1>
                 <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
-                    We help businesses grow their online presence with proven digital marketing strategies. 
-                    From SEO to social media, we've got you covered.
+                    Comprehensive Digital Marketing, Development Solutions, and Learning Academy. 
+                    We help businesses grow, innovate, and succeed in the digital age.
                 </p>
                 <div class="hero-cta" data-aos="fade-up" data-aos-delay="400">
-                    <a href="contact.html" class="cta-button primary">Get Started Today</a>
-                    <a href="#services" class="cta-button secondary">Our Services</a>
+                    <a href="contact.html" class="cta-button primary">
+                        <i class="fas fa-rocket"></i>
+                        Get Started Today
+                    </a>
+                    <a href="#services" class="cta-button secondary">
+                        <i class="fas fa-play"></i>
+                        Watch Demo
+                    </a>
+                </div>
+                <div class="hero-stats" data-aos="fade-up" data-aos-delay="600">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="500">0</span>+
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="200">0</span>+
+                        <span class="stat-label">Clients</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="1000">0</span>+
+                        <span class="stat-label">Students</span>
+                    </div>
                 </div>
             </div>
-            <div class="hero-image" data-aos="fade-left" data-aos-delay="300">
-                <div class="hero-graphic">
-                    <div class="floating-element element-1">📈</div>
-                    <div class="floating-element element-2">🎯</div>
-                    <div class="floating-element element-3">🚀</div>
-                    <div class="floating-element element-4">💡</div>
+            <div class="hero-visual" data-aos="fade-left" data-aos-delay="300">
+                <div class="hero-image">
+                    <img src="assets/hero-main.png" alt="VenusSolution Services" loading="lazy">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about" id="about">
+    <!-- Services Overview Section -->
+    <section class="services-overview" id="services">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <h2>About VenusSolution</h2>
-                <p>Your trusted partner in digital marketing success</p>
-            </div>
-            <div class="about-content">
-                <div class="about-text" data-aos="fade-right">
-                    <p>
-                        VenusSolution is a leading digital marketing agency dedicated to helping businesses 
-                        achieve their online goals. With years of experience and a passion for results, 
-                        we create customized strategies that drive growth and increase ROI.
-                    </p>
-                    <p>
-                        Our team of experts specializes in SEO, social media marketing, Google Ads, 
-                        content writing, and web design. We believe in data-driven approaches and 
-                        transparent communication with our clients.
-                    </p>
-                </div>
-                <div class="about-stats" data-aos="fade-left">
-                    <div class="stat-item">
-                        <div class="stat-number">500+</div>
-                        <div class="stat-label">Projects Completed</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">200+</div>
-                        <div class="stat-label">Happy Clients</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">5+</div>
-                        <div class="stat-label">Years Experience</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="services" id="services">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2>Our Services</h2>
-                <p>Comprehensive digital marketing solutions for your business</p>
+                <h2>Our Comprehensive Services</h2>
+                <p>Three pillars of excellence to drive your success</p>
             </div>
             <div class="services-grid">
-                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="service-icon">🔍</div>
-                    <h3>SEO</h3>
-                    <p>Improve your search engine rankings and drive organic traffic to your website with our proven SEO strategies.</p>
-                    <a href="seo.html" class="service-link">Learn More →</a>
+                <div class="service-category" data-aos="fade-up" data-aos-delay="100">
+                    <div class="category-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Digital Marketing</h3>
+                    <p>Comprehensive digital marketing solutions to boost your online presence and drive growth.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> SEO & SEM</li>
+                        <li><i class="fas fa-check"></i> Social Media Marketing</li>
+                        <li><i class="fas fa-check"></i> PPC & Google Ads</li>
+                        <li><i class="fas fa-check"></i> Content Marketing</li>
+                        <li><i class="fas fa-check"></i> Email Marketing</li>
+                        <li><i class="fas fa-check"></i> Video Marketing</li>
+                        <li><i class="fas fa-check"></i> Influencer Marketing</li>
+                        <li><i class="fas fa-check"></i> Branding</li>
+                    </ul>
+                    <a href="digital-marketing.html" class="category-link">
+                        Explore Services <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
-                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="service-icon">📱</div>
-                    <h3>Social Media Marketing</h3>
-                    <p>Build your brand presence and engage with your audience across all major social media platforms.</p>
-                    <a href="social-media.html" class="service-link">Learn More →</a>
+
+                <div class="service-category" data-aos="fade-up" data-aos-delay="200">
+                    <div class="category-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Development Services</h3>
+                    <p>Cutting-edge development solutions to build robust, scalable, and innovative digital products.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> Website Development</li>
+                        <li><i class="fas fa-check"></i> Mobile App Development</li>
+                        <li><i class="fas fa-check"></i> E-commerce Solutions</li>
+                        <li><i class="fas fa-check"></i> Software Development</li>
+                        <li><i class="fas fa-check"></i> UI/UX Design</li>
+                        <li><i class="fas fa-check"></i> API Integration</li>
+                        <li><i class="fas fa-check"></i> Maintenance & Support</li>
+                    </ul>
+                    <a href="development.html" class="category-link">
+                        Explore Services <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
-                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="service-icon">💰</div>
-                    <h3>Google Ads</h3>
-                    <p>Drive immediate results with targeted PPC campaigns that maximize your advertising budget.</p>
-                    <a href="google-ads.html" class="service-link">Learn More →</a>
+
+                <div class="service-category" data-aos="fade-up" data-aos-delay="300">
+                    <div class="category-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Learning Academy</h3>
+                    <p>Comprehensive learning programs to enhance skills and advance careers in digital technology.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> Online Courses</li>
+                        <li><i class="fas fa-check"></i> Certification Programs</li>
+                        <li><i class="fas fa-check"></i> Internships</li>
+                        <li><i class="fas fa-check"></i> Live Training Sessions</li>
+                        <li><i class="fas fa-check"></i> Industry Projects</li>
+                        <li><i class="fas fa-check"></i> Career Guidance</li>
+                    </ul>
+                    <a href="learning-academy.html" class="category-link">
+                        Explore Academy <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
-                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="service-icon">✍️</div>
-                    <h3>Content Writing</h3>
-                    <p>Create compelling, SEO-optimized content that resonates with your audience and drives conversions.</p>
-                    <a href="content-writing.html" class="service-link">Learn More →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Why Choose VenusSolution?</h2>
+                <p>We deliver excellence through innovation, expertise, and dedication</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h4>Proven Excellence</h4>
+                    <p>5+ years of delivering exceptional results with a track record of success across industries.</p>
                 </div>
-                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
-                    <div class="service-icon">🎨</div>
-                    <h3>Web Design</h3>
-                    <p>Build stunning, user-friendly websites that convert visitors into customers and drive business growth.</p>
-                    <a href="web-design.html" class="service-link">Learn More →</a>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h4>Expert Team</h4>
+                    <p>Certified professionals with deep expertise in digital marketing, development, and education.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h4>Data-Driven</h4>
+                    <p>Results-oriented approach using analytics and insights to optimize performance and ROI.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h4>24/7 Support</h4>
+                    <p>Round-the-clock customer support to ensure your success and satisfaction.</p>
                 </div>
             </div>
         </div>
@@ -161,42 +259,107 @@
     <section class="testimonials" id="testimonials">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <h2>What Our Clients Say</h2>
-                <p>Don't just take our word for it</p>
+                <h2>What Our Clients & Students Say</h2>
+                <p>Success stories that speak for themselves</p>
             </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="testimonials-slider" data-aos="fade-up" data-aos-delay="200">
+                <div class="testimonial-card active">
                     <div class="testimonial-content">
-                        <p>"VenusSolution transformed our online presence completely. Our organic traffic increased by 300% in just 6 months!"</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"VenusSolution transformed our business completely. Our digital presence increased by 400% in just 8 months!"</p>
                     </div>
                     <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="assets/testimonial-1.jpg" alt="Sarah Johnson" loading="lazy">
+                        </div>
                         <div class="author-info">
                             <h4>Sarah Johnson</h4>
                             <span>CEO, TechStart Inc.</span>
                         </div>
                     </div>
                 </div>
-                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="testimonial-card">
                     <div class="testimonial-content">
-                        <p>"The team at VenusSolution is professional, responsive, and delivers results. Highly recommended!"</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"The Learning Academy helped me transition into digital marketing. Now I'm working with top brands!"</p>
                     </div>
                     <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="assets/testimonial-2.jpg" alt="Mike Chen" loading="lazy">
+                        </div>
                         <div class="author-info">
                             <h4>Mike Chen</h4>
-                            <span>Founder, Digital Solutions</span>
+                            <span>Digital Marketing Specialist</span>
                         </div>
                     </div>
                 </div>
-                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="testimonial-card">
                     <div class="testimonial-content">
-                        <p>"Outstanding service and results. Our Google Ads campaigns are now generating 5x ROI consistently."</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Outstanding development services. Our e-commerce platform is generating 3x more revenue!"</p>
                     </div>
                     <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="assets/testimonial-3.jpg" alt="Emily Rodriguez" loading="lazy">
+                        </div>
                         <div class="author-info">
                             <h4>Emily Rodriguez</h4>
-                            <span>Marketing Director, GrowthCo</span>
+                            <span>Founder, GrowthCo</span>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <button class="control-btn prev" id="prev-testimonial">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="control-btn next" id="next-testimonial">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="partners">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Trusted By Industry Leaders</h2>
+                <p>We work with companies that value excellence</p>
+            </div>
+            <div class="partners-grid" data-aos="fade-up" data-aos-delay="200">
+                <div class="partner-logo">
+                    <img src="assets/partner-1.png" alt="Partner Company 1" loading="lazy">
+                </div>
+                <div class="partner-logo">
+                    <img src="assets/partner-2.png" alt="Partner Company 2" loading="lazy">
+                </div>
+                <div class="partner-logo">
+                    <img src="assets/partner-3.png" alt="Partner Company 3" loading="lazy">
+                </div>
+                <div class="partner-logo">
+                    <img src="assets/partner-4.png" alt="Partner Company 4" loading="lazy">
+                </div>
+                <div class="partner-logo">
+                    <img src="assets/partner-5.png" alt="Partner Company 5" loading="lazy">
                 </div>
             </div>
         </div>
@@ -206,9 +369,18 @@
     <section class="cta-section" id="cta">
         <div class="container">
             <div class="cta-content" data-aos="fade-up">
-                <h2>Ready to Grow Your Business?</h2>
-                <p>Let's discuss how we can help you achieve your digital marketing goals.</p>
-                <a href="contact.html" class="cta-button primary">Contact Us Today</a>
+                <h2>Ready to Transform Your Business?</h2>
+                <p>Join hundreds of successful businesses and students who have chosen VenusSolution</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="cta-button primary">
+                        <i class="fas fa-rocket"></i>
+                        Start Your Journey
+                    </a>
+                    <a href="tel:9034534738" class="cta-button secondary">
+                        <i class="fas fa-phone"></i>
+                        Call Now: 9034534738
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -218,36 +390,131 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>VenusSolution</h3>
-                    <p>Your trusted partner in digital marketing success. We help businesses grow their online presence with proven strategies and results-driven approaches.</p>
+                    <div class="footer-logo">
+                        <div class="logo-icon">VS</div>
+                        <span class="logo-text">VenusSolution</span>
+                    </div>
+                    <p>Your trusted partner in digital transformation. We help businesses grow, innovate, and succeed in the digital age.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
                 </div>
+                
                 <div class="footer-section">
                     <h4>Services</h4>
                     <ul>
-                        <li><a href="seo.html">SEO</a></li>
-                        <li><a href="social-media.html">Social Media Marketing</a></li>
-                        <li><a href="google-ads.html">Google Ads</a></li>
-                        <li><a href="content-writing.html">Content Writing</a></li>
-                        <li><a href="web-design.html">Web Design</a></li>
+                        <li><a href="digital-marketing.html">Digital Marketing</a></li>
+                        <li><a href="development.html">Development</a></li>
+                        <li><a href="learning-academy.html">Learning Academy</a></li>
+                        <li><a href="internships.html">Internships</a></li>
                     </ul>
                 </div>
+                
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                    </ul>
+                </div>
+                
                 <div class="footer-section">
                     <h4>Contact</h4>
-                    <p>Phone: 9034534738</p>
-                    <p>Email: info@venussolution.com</p>
-                    <div class="social-links">
-                        <a href="#" class="social-link">LinkedIn</a>
-                        <a href="#" class="social-link">Instagram</a>
-                        <a href="#" class="social-link">Facebook</a>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> <a href="tel:9034534738">9034534738</a></p>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:info@venussolution.com">info@venussolution.com</a></p>
+                        <p><i class="fas fa-map-marker-alt"></i> Mumbai, Maharashtra, India</p>
+                    </div>
+                    <div class="footer-cta">
+                        <a href="contact.html" class="footer-btn">Get Quote</a>
                     </div>
                 </div>
             </div>
+            
             <div class="footer-bottom">
-                <p>&copy; 2024 VenusSolution. All rights reserved.</p>
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 VenusSolution. All rights reserved.</p>
+                    <div class="footer-links">
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms of Service</a>
+                        <a href="sitemap.html">Sitemap</a>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
 
+    <!-- Live Chat Widget -->
+    <div class="live-chat-widget" id="live-chat">
+        <div class="chat-toggle" id="chat-toggle">
+            <i class="fas fa-comments"></i>
+            <span class="chat-label">Chat with us</span>
+        </div>
+        <div class="chat-window" id="chat-window">
+            <div class="chat-header">
+                <h4>Live Chat</h4>
+                <button class="close-chat" id="close-chat">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <div class="message bot">
+                    <p>Hello! How can we help you today?</p>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Type your message..." id="chat-input">
+                <button class="send-btn" id="send-btn">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/919034534738" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Newsletter Popup -->
+    <div class="newsletter-popup" id="newsletter-popup">
+        <div class="popup-content">
+            <button class="close-popup" id="close-popup">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="popup-icon">
+                <i class="fas fa-envelope-open-text"></i>
+            </div>
+            <h3>Stay Updated!</h3>
+            <p>Get the latest insights, tips, and updates from VenusSolution delivered to your inbox.</p>
+            <form class="newsletter-form" id="newsletter-form">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit" class="subscribe-btn">
+                    <i class="fas fa-paper-plane"></i>
+                    Subscribe
+                </button>
+            </form>
+            <p class="popup-note">No spam, unsubscribe at any time.</p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="scripts.js"></script>
 </body>
