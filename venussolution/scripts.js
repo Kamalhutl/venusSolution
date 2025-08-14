@@ -5,8 +5,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize all components
     initNavigation();
-    initThemeToggle();
-    initLanguageToggle();
     initTestimonialsSlider();
     initLiveChat();
     initNewsletterPopup();
@@ -73,77 +71,9 @@ function highlightActiveNav() {
     });
 }
 
-// ===== THEME TOGGLE =====
-function initThemeToggle() {
-    const themeToggle = document.getElementById('theme-toggle');
-    const themeIcon = themeToggle?.querySelector('i');
-    
-    if (themeToggle && themeIcon) {
-        // Load saved theme
-        const savedTheme = localStorage.getItem('theme') || 'dark';
-        document.documentElement.setAttribute('data-theme', savedTheme);
-        updateThemeIcon(themeIcon, savedTheme);
-        
-        themeToggle.addEventListener('click', function() {
-            const currentTheme = document.documentElement.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            
-            document.documentElement.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-            updateThemeIcon(themeIcon, newTheme);
-            
-            // Add transition effect
-            document.body.style.transition = 'all 0.3s ease';
-            setTimeout(() => {
-                document.body.style.transition = '';
-            }, 300);
-        });
-    }
-}
 
-function updateThemeIcon(icon, theme) {
-    if (theme === 'light') {
-        icon.className = 'fas fa-sun';
-    } else {
-        icon.className = 'fas fa-moon';
-    }
-}
 
-// ===== LANGUAGE TOGGLE =====
-function initLanguageToggle() {
-    const langBtns = document.querySelectorAll('.lang-btn');
-    
-    langBtns.forEach(btn => {
-        btn.addEventListener('click', function() {
-            const lang = this.getAttribute('data-lang');
-            
-            // Remove active class from all buttons
-            langBtns.forEach(b => b.classList.remove('active'));
-            // Add active class to clicked button
-            this.classList.add('active');
-            
-            // Store language preference
-            localStorage.setItem('language', lang);
-            
-            // Change language (placeholder for actual implementation)
-            changeLanguage(lang);
-        });
-    });
-    
-    // Load saved language
-    const savedLang = localStorage.getItem('language') || 'en';
-    const activeBtn = document.querySelector(`[data-lang="${savedLang}"]`);
-    if (activeBtn) {
-        activeBtn.classList.add('active');
-        changeLanguage(savedLang);
-    }
-}
 
-function changeLanguage(lang) {
-    // This would typically involve loading language files
-    // For now, we'll just show a notification
-    showNotification(`Language changed to ${lang === 'en' ? 'English' : 'Hindi'}`, 'success');
-}
 
 // ===== TESTIMONIALS SLIDER =====
 function initTestimonialsSlider() {
@@ -694,7 +624,6 @@ if ('serviceWorker' in navigator) {
 window.VenusSolution = {
     showNotification,
     trackEvent,
-    changeLanguage,
     showNewsletterPopup,
     hideNewsletterPopup
 };

@@ -31,8 +31,6 @@ A modern, professional, and fully responsive website for VenusSolution offering 
    - Live Training Sessions
 
 ### Advanced Features
-- **Multi-language Support**: English + Hindi
-- **Theme Toggle**: Light/Dark mode
 - **Live Chat Widget**: Real-time customer support
 - **WhatsApp Integration**: Direct messaging support
 - **Newsletter Popup**: Email subscription system
@@ -63,8 +61,7 @@ venussolution/
 │   └── README.md            # Assets documentation
 ├── contact.html              # Contact page (existing)
 ├── about.html                # About Us page (to be created)
-├── portfolio.html            # Portfolio page (to be created)
-├── blog.html                 # Blog page (to be created)
+
 ├── internships.html          # Internships page (to be created)
 ├── login.html                # Login page (to be created)
 ├── signup.html               # Signup page (to be created)
@@ -221,8 +218,6 @@ For technical support or questions about the website:
 - **Admin Panel**: Content management system
 - **Payment Gateway**: Course and service purchases
 - **User Dashboard**: Personalized user experience
-- **Blog System**: Content management and publishing
-- **Multi-language**: Full Hindi language support
 - **Advanced Analytics**: User behavior tracking
 - **API Integration**: Third-party service connections
 
